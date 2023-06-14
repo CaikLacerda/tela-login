@@ -4,6 +4,7 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Noto Sans', sans-serif;
+    box-sizing: border-box;
 }
 
 .login {
@@ -26,6 +27,11 @@
 
 .titulo-login > h1 {
     color: #77ffc0;
+    font-size: 3vw;
+}
+
+.imagem-login {
+    width: 35vw;
 }
 
 .formulario-login {
@@ -99,4 +105,38 @@
     background-color: #00ff88;
     cursor: pointer;
     box-shadow: 0px 10px 40px -12px #00ff8052;
+}
+
+@media only screen and (max-width: 950px) {
+    .area-login{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .login {
+        flex-direction: column;
+    }
+
+    .titulo-login > h1 {
+        display: none;
+    }
+
+    .titulo-login {
+        width: 100%;
+        height: auto;
+    }
+
+    .formulario-login {
+        width: 100%;
+        height: auto;
+    }
+    
+    .imagem-login {
+        width: 50vw;
+    }
+
+    .area-login {
+        width: 90%;
+    }
 }
